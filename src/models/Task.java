@@ -55,7 +55,7 @@ public class Task {
         this.content = content;
     }
 
-    public Timestamp getcreated_at() {
+    public Timestamp getCreated_at() {
         return created_at;
     }
 
@@ -68,5 +68,6 @@ public class Task {
     }
 
     public void setUpdated_at(Timestamp updated_at) {
+        this.updated_at = updated_at;
     }
 }
