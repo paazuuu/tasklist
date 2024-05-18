@@ -45,8 +45,8 @@ public class CreateServlet extends HttpServlet {
             task.setContent(content);
 
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
-            task.setCreatedAt(currentTime);
-            task.setUpdatedAt(currentTime);
+            task.setCreated_at(currentTime);
+            task.setUpdated_at(currentTime);
 
             // バリデーションを実行してエラーがあったら新規登録のフォームに戻る
             List<String> errors = TaskValidator.validate(task);

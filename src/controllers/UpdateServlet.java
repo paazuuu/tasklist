@@ -47,7 +47,7 @@ public class UpdateServlet extends HttpServlet {
             t.setContent(content);
 
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
-            t.setUpdatedAt(currentTime); // 更新日時のみ上書き
+            t.setUpdated_at(currentTime); // 更新日時のみ上書き
 
             // バリデーションを実行してエラーがあったら編集画面のフォームに戻る
             List<String> errors = TaskValidator.validate(t);
